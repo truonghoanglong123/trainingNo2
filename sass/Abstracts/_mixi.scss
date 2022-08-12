@@ -1,0 +1,19 @@
+@mixin  respond($breakpoint) {
+    @if $breakpoint == big-pc{
+        @media (min-width: 1260px){@content}; 
+    }
+
+    @if $breakpoint == pc{
+        @media (max-width: 1200px) and (min-width:650px){@content}; 
+    }
+
+    @if $breakpoint == sp{
+        @media (max-width: 750px) {@content};
+    }
+
+    @if $breakpoint == 450{
+        @media (max-width: 450px) {@content};
+    }
+}
+
+

@@ -1,0 +1,45 @@
+.logo{
+    margin-left: 2rem;
+}
+.menu{
+    margin-right: 2rem;
+    height: 100%;
+    &__ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;   
+        &--li{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding: 0 1.8rem;
+            border-left: 1px solid $color-border-menu;
+            transform: skewX(-25deg);
+            cursor: pointer;
+            &:last-child{
+                border-right: 1px solid $color-border-menu;
+            }
+            & a{
+                font-size: 1.8rem;
+                text-decoration: none;
+                transform: skewX(25deg);
+                color: $primary;
+                transition: all .5s;
+                & span{
+                    font-size: 1.4rem;
+                    color: $color-text-menu-2;
+                    transition: all .5s;
+                }
+            }
+        }
+        &--li:hover{
+            background-color: $primary;
+        }
+        &--li:hover a,
+        &--li:hover a span{
+            color: $color-text;
+        }
+    }
+}

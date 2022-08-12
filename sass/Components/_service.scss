@@ -1,0 +1,151 @@
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    &__text{
+        font-size: 1.4rem;
+        color:$color-three;
+        margin-top: 3.5rem;
+    }
+}
+
+.box{
+    margin-top: 6rem;
+    margin-bottom: 8rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.button{
+    vertical-align: top;
+    position: relative;
+    border: 1px solid $color-boder-btn;
+    width: 260px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    background-color: $bg-button;
+    cursor: pointer;
+    margin-bottom: 2rem !important;
+    margin-right: 2rem ; 
+    &:nth-child(4){
+        margin-right: 0 ;
+    }
+    &:last-child{
+        margin-right: 0;
+    }
+    &__text{
+        color: $primary;
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+    &__img{
+        margin-top: 2rem;
+    }
+
+
+    &__TopBottom:before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 2px;
+        top: 0;
+        left: 0;
+        background: $color-boder-btn;
+        transition: all 0.5s ease;
+    }  
+    &__TopBottom:after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 2px;
+        bottom: 0;
+        right: 0;
+        background: $color-boder-btn;
+        transition: all 0.5s ease;
+    }
+
+    &__TopBottom2:before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 2px;
+        top: 0;
+        right: 0;
+        background: $color-boder-btn;
+        transition: all 0.5s ease;
+    }
+    &__TopBottom2:after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background:$color-boder-btn;
+        transition: all 0.5s ease;
+    }
+
+    &__LeftRight:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 2px;
+        height: 10px;
+        background:$color-boder-btn;
+        transition: all 0.5s ease;
+    }
+    &__LeftRight:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 2px;
+        height: 10px;
+        background: $color-boder-btn;
+        transition: all 0.5s ease;
+    }
+
+    &__LeftRight2:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 2px;
+        height: 10px;
+        background: $color-boder-btn;
+        transition: all 0.5s ease;
+    } 
+    &__LeftRight2:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 2px;
+        height: 10px;
+        background: $color-boder-btn;
+        transition: all 0.5s ease;
+    }
+
+    &:hover &__LeftRight:before,
+    &:hover &__LeftRight::after{
+        z-index: 999;
+        background:$primary;
+        height: 100%;
+        transition: all 0.5s ease;
+    }
+
+    &:hover &__TopBottom2:before,
+    &:hover &__TopBottom2::after{
+        background: $primary;
+        width: 100%;
+        transition: all 0.5s ease;
+        transition-delay: .5s;
+    }
+
+}

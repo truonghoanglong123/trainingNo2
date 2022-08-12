@@ -1,1 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+.text-primary{
+    font-size: 3.6rem;
+    color: $primary;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.text-primary-small{
+    font-size: 1.4rem;
+    margin-top: 1.2rem;
+    color: $color-text-primary-small;
+}
