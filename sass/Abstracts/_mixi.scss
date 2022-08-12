@@ -4,7 +4,7 @@
     }
 
     @if $breakpoint == pc{
-        @media (max-width: 1200px) and (min-width:650px){@content}; 
+        @media (max-width: 1600px) and (min-width:640px){@content}; 
     }
 
     @if $breakpoint == sp{

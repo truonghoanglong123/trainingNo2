@@ -13,9 +13,11 @@
 .section-service{
     background-color:$color-background-service;
     padding-top: 7rem;
-    padding-bottom: 8rem;
+    padding-bottom: 6rem;
 }
 
 .section-about{
-
+    display: flex;
+    height: 200vh;
+    width: 100%;
 }
