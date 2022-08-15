@@ -8,11 +8,7 @@
     }
 
     @if $breakpoint == sp{
-        @media (max-width: 750px) {@content};
-    }
-
-    @if $breakpoint == 450{
-        @media (max-width: 450px) {@content};
+        @media (max-width: 640px) {@content};
     }
 }
 

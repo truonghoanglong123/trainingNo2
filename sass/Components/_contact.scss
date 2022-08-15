@@ -1,0 +1,115 @@
+.text-contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: $color-text;
+    padding-top: 5rem;
+}
+.color-contact{
+    color: $color-text;
+}
+
+.contact-content{
+    display: flex;
+    margin-top: 3rem;
+}
+
+.contentLeft{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 1.5rem;
+    margin-right: 3rem;
+    &__nth{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        width: 100%;
+        &--title{
+            color: $color-text;
+            font-size: 1.4rem;
+            width: 100%;
+        }
+        &--typing{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &--title{
+                color: $color-text;
+                font-size: 1.4rem;
+                margin-right: 1rem;
+                margin-left: 3rem;
+            }
+            &--input{
+                width: 150px;
+                height: 35px;
+                border-radius: .5rem;
+                outline: none;
+                border: none;
+            }
+            &--input2{
+                width: 370px;
+                height: 35px;
+                border-radius: .5rem;
+                outline: none;
+                border: none;
+            }
+            &--input3{
+                width: 370px;
+                height: 115px;
+                border-radius: .5rem;
+                outline: none;
+                border: none;
+            }
+        }
+    }
+}
+
+.contentRigth{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-left: 2.5rem;
+    &__text{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5rem;
+        &--one{
+            & p{
+                color: $color-text;
+                font-size: 1.4rem;
+                margin-bottom: 3.5rem;
+                line-height: 1.75;
+            }
+        }
+        &--true{
+            & p{
+                color: $color-text;
+                font-size: 1.4rem;
+                line-height: 1.75;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.btn-footer{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: fit-content; 
+}
+.btn{
+    margin: 0;
+}
