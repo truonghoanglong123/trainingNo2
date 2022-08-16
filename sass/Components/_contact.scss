@@ -5,6 +5,11 @@
     flex-direction: column;
     color: $color-text;
     padding-top: 5rem;
+    &__small{
+        font-size: 1.4rem;
+        color:$color-text;
+        margin-top: .8rem;
+    }
 }
 .color-contact{
     color: $color-text;
@@ -13,6 +18,11 @@
 .contact-content{
     display: flex;
     margin-top: 3rem;
+    @include respond(mobile){
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .contentLeft{
@@ -20,18 +30,33 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-left: 1.5rem;
-    margin-right: 3rem;
+    padding-left: 1.2rem;
+    padding-right: 3rem;
+    @include respond(mobile){
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
     &__nth{
+        @include respond(mobile){
+            flex-direction: column;
+            margin-top: 1rem;
+        }
+
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        // align-items: center; //
         margin-bottom: 1.5rem;
         width: 100%;
         &--title{
             color: $color-text;
             font-size: 1.4rem;
             width: 100%;
+            margin-top: 1rem; //
+            @include respond(mobile){
+                margin: 0;
+                margin-bottom: 1rem;
+            }
         }
         &--typing{
             display: flex;
@@ -42,27 +67,45 @@
                 font-size: 1.4rem;
                 margin-right: 1rem;
                 margin-left: 3rem;
+                @include respond(mobile){
+                    margin-left: 0;
+                    margin-right: 3rem;
+                }
             }
             &--input{
-                width: 150px;
-                height: 35px;
+                width: 15rem;
+                height: 3.5rem;
                 border-radius: .5rem;
                 outline: none;
                 border: none;
+                &:first-child{
+                    @include respond(mobile){
+                        margin-right: 3rem !important;
+                    }
+                }
+                @include respond(mobile){
+                    width: 100%;
+                }
             }
             &--input2{
-                width: 370px;
-                height: 35px;
+                width: 37rem;
+                height: 3.5rem;
                 border-radius: .5rem;
                 outline: none;
                 border: none;
+                @include respond(mobile){
+                    width: 100%;
+                }
             }
             &--input3{
-                width: 370px;
-                height: 115px;
+                width: 37rem;
+                height: 11.5rem;
                 border-radius: .5rem;
                 outline: none;
                 border: none;
+                @include respond(mobile){
+                    width: 100%;
+                }
             }
         }
     }
@@ -71,18 +114,29 @@
 .contentRigth{
     width: 50%;
     display: flex;
-    align-items: center;
-    margin-left: 2.5rem;
+    align-items: center;    
+    padding-bottom: 7rem;
+    padding-left: 2.5rem;
+    @include respond(mobile){
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+    }
     &__text{
         display: flex;
         flex-direction: column;
         margin-left: 5rem;
+        @include respond(mobile){
+            margin: 0;
+        }
         &--one{
             & p{
                 color: $color-text;
                 font-size: 1.4rem;
                 margin-bottom: 3.5rem;
                 line-height: 1.75;
+                margin-top: 2rem;
             }
         }
         &--true{
@@ -96,19 +150,11 @@
 }
 
 
-
-
-
-
-
-
-
-
 .btn-footer{
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
-    height: fit-content; 
+    margin-right: 9.5rem;
+    @include respond(mobile){
+        margin: 0;
+    }
 }
 .btn{
     margin: 0;

@@ -1,13 +1,12 @@
 @mixin  respond($breakpoint) {
     @if $breakpoint == big-pc{
-        @media (min-width: 1260px){@content}; 
+        @media (min-width: 1600px){@content}; 
     }
-
     @if $breakpoint == pc{
-        @media (max-width: 1600px) and (min-width:640px){@content}; 
+        @media (max-width: 1600px) and (min-width:641px){@content}; 
     }
 
-    @if $breakpoint == sp{
+    @if $breakpoint == mobile{
         @media (max-width: 640px) {@content};
     }
 }

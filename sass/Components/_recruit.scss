@@ -13,7 +13,7 @@
 //     z-index: 2 
 // }
 .text-recruit{
-    color: $color-text;
+    color: $text-recruit;
 }
 
 .recruit-image{
@@ -31,9 +31,10 @@
         left:50%; 
         transform:translate(-50%, 0); 
         & p{
-            color: $color-text;
-            margin-top: 3.5rem;
+            color: $text-recruit;
+            margin-top: 3rem;
             font-size: 1.4rem;
+            line-height: 2;
             & span:nth-child(2){
                 top: 1rem;
             }
@@ -41,5 +42,5 @@
     }
 }
 .btn__recruit{
-    margin: 3rem auto 0 auto;
+    margin: 2rem auto 0 auto;
 }
