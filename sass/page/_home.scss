@@ -63,6 +63,9 @@
     justify-content: center;
     color: $color-text;
     font-size: 1.2rem;
+    @include respond(mobile){
+        font-size: 1.1rem;
+    }
 }
 
 .backtop{
