@@ -14,6 +14,9 @@ html{
     @include respond(pc){
         font-size: calc(100vw/160);
     }
+    @include respond(mobile){
+        scroll-behavior:initial;
+    }
 }
 body{
     position: relative;
@@ -33,8 +36,8 @@ html,body{
     padding-right: 25rem;
     width: 100%;
     @include respond(mobile){
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 

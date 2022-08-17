@@ -37,7 +37,7 @@
     }
     &:hover &--img{
         transform: scale(1.05);
-        z-index: 10;
+        z-index: 100;
     }
     &--img{
         transition: all .5s;
@@ -45,6 +45,7 @@
         width: 100%;    
     }
     &--text{
+        z-index: 500;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -60,6 +61,7 @@
         }
     }
     &--text2{
+        z-index: 500;
         position: absolute;
         top: 85%;
         left: 50%;

@@ -42,7 +42,11 @@
             flex-direction: column;
             margin-top: 1rem;
         }
-
+        &:last-child{
+            @include respond(mobile){
+                margin: 0;
+            }
+        }   
         display: flex;
         justify-content: space-between;
         // align-items: center; //
@@ -69,7 +73,6 @@
                 margin-left: 3rem;
                 @include respond(mobile){
                     margin-left: 0;
-                    margin-right: 3rem;
                 }
             }
             &--input{
@@ -78,11 +81,6 @@
                 border-radius: .5rem;
                 outline: none;
                 border: none;
-                &:first-child{
-                    @include respond(mobile){
-                        margin-right: 3rem !important;
-                    }
-                }
                 @include respond(mobile){
                     width: 100%;
                 }
@@ -122,11 +120,12 @@
         justify-content: center;
         width: 100%;
         padding: 0;
-        margin-top: 3rem;
+        margin-top: 2rem;
     }
     &__text{
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         margin-left: 5rem;
         @include respond(mobile){
             margin: 0;
@@ -137,7 +136,7 @@
                 font-size: 1.4rem;
                 margin-bottom: 3.5rem;
                 line-height: 1.75;
-                margin-top: 2rem;
+                margin-top: 1rem;
             }
         }
         &--true{
@@ -145,6 +144,7 @@
                 color: $color-text;
                 font-size: 1.4rem;
                 line-height: 1.75;
+                margin-top: -2rem;
             }
         }
     }
@@ -159,4 +159,14 @@
 }
 .btn{
     margin: 0;
+}
+#input1{
+    @include respond(mobile){
+        margin-right: 2rem;
+    }
+}
+.title2{
+    @include respond(mobile){
+        margin-left: 2rem;
+    }
 }

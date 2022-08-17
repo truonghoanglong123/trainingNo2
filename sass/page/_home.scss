@@ -1,11 +1,9 @@
 .section-background{
     width: 100%;
     height: 82.9rem;
-    // height: 100%;
     @include respond(mobile){
         width: 100%;
         height: 38rem;
-        // height: 100%;
     }
 }
 .section-menu{
@@ -31,6 +29,10 @@
     padding-bottom: 6rem;
     display: flex;
     flex-direction: column;
+    @include respond(mobile){
+        padding-top: 3rem;
+        padding-bottom: 1.5rem;
+    }
 }
 
 .section-about{
@@ -42,6 +44,10 @@
     padding-top: 5.3rem;
     padding-bottom: 8rem;
     text-align: center;
+    @include respond(mobile){
+        padding-top: 3rem;
+        padding-bottom: 2.5rem;
+    }
 }
 
 .section-recruit{
@@ -87,4 +93,7 @@
 }
 .btnshow{
     display: none;
+}
+.faceIn{
+    animation: fadeInText 1s ease-in-out forwards;
 }
