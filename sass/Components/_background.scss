@@ -41,7 +41,7 @@
     text-align: center;
     letter-spacing: -3px;
     @include respond(mobile){
-        top: 23.5rem;
+        top: 9rem;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -56,11 +56,25 @@
         margin-top: 4.5rem;
         @include respond(mobile){
             font-size: 1.2rem;
+            margin-top: 2rem;
         }
         &--child{
             margin-top: 1.5rem;
+            @include respond(mobile){
+                margin-top: .5rem;
+            }
+
             & p{
                 margin-top: 1.5rem;
+                @include respond(mobile){
+                    margin-top: .5rem;
+                }
+            }
+            &--span{
+                @include respond(mobile){
+                    margin-top: .5rem;
+                    display: block;
+                }
             }
         }
     }
@@ -72,8 +86,18 @@
     animation:fadeInText ease-in 1;
     animation-fill-mode:forwards;
     animation-duration:1.4s;
+    animation-delay: .5s;
 }
 
 .fade-in.delayed {
     animation-delay: 1.4s;
+}
+
+@keyframes blur{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }

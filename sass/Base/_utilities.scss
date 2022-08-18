@@ -13,5 +13,6 @@
     color: $color-text-primary-small;
     @include respond(mobile){
         font-size: 1.2rem;
+        margin-top: .5rem;
     }
 }

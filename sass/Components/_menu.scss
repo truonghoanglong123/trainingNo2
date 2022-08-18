@@ -1,5 +1,18 @@
 .logo{
     margin-left: 2rem;
+    @include respond(mobile){
+        margin-left: 1rem;
+    }
+    &__box{
+        width: 228px;
+        height: 60px;
+        &--img{
+            @include respond(mobile){
+                width: 114px;
+                height: 30px;
+            }
+        }
+    }
 }
 .menu{
     margin-right: 2rem;
@@ -80,7 +93,6 @@
     }
 }
 
-
 .humburger{
     display: none;
     @include respond(mobile){
@@ -93,6 +105,10 @@
         z-index: 999999;
     }
     &__icon{
+        @include respond(mobile){
+            top: 1.75rem;
+            right: 1.5rem;
+        }
         position: fixed;
         top: 3.5rem;
         right: 2.5rem;
@@ -116,9 +132,15 @@
         }
         &::before{
             top: -.9rem;
+            @include respond(mobile){
+                top: -.7rem;
+            }
         }
         &::after{
             top: .9rem;
+            @include respond(mobile){
+                top: .7rem;
+            }
         }
     }
 }
@@ -179,5 +201,17 @@
             top: 0;
             transform: rotate(-135deg);
         }
+    }
+}
+
+.show-mb {
+    display: none;
+}
+@include respond(mobile){
+    .show-pc {
+        display: none
+    }
+    .show-mb {
+        display: block;
     }
 }

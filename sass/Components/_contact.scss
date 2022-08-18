@@ -1,4 +1,5 @@
 .text-contact{
+    opacity: 0; //
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,6 +17,7 @@
 }
 
 .contact-content{
+    opacity: 0; //
     display: flex;
     margin-top: 3rem;
     @include respond(mobile){
@@ -60,6 +62,7 @@
             @include respond(mobile){
                 margin: 0;
                 margin-bottom: 1rem;
+                font-size: 1.2rem;
             }
         }
         &--typing{
@@ -133,7 +136,7 @@
         &--one{
             & p{
                 color: $color-text;
-                font-size: 1.4rem;
+                font-size: 1.2rem;
                 margin-bottom: 3.5rem;
                 line-height: 1.75;
                 margin-top: 1rem;
@@ -142,7 +145,7 @@
         &--true{
             & p{
                 color: $color-text;
-                font-size: 1.4rem;
+                font-size: 1.2rem;
                 line-height: 1.75;
                 margin-top: -2rem;
             }

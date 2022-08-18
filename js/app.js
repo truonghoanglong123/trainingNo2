@@ -7,4 +7,5 @@ function swapImages(){
     });
     $next.fadeIn().addClass('active');
 }
-setInterval('swapImages()', 3000);
+setInterval('swapImages()', 3500);
+
