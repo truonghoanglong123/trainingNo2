@@ -18,13 +18,13 @@ document.addEventListener("DOMContentLoaded",function(){
 
     var recruit = document.querySelector('.recruit-image__content')
     var location_recruit = recruit.offsetTop + 1700
-    console.log(location_recruit);
 
     var text_contact = document.querySelector('.text-contact')
-    var location_text_contact = text_contact.offsetTop -750
+    var location_text_contact = text_contact.offsetTop -800
 
     var contact_content = document.querySelector('.contact-content')
-    var location_contact_content = contact_content.offsetTop -650
+    var location_contact_content = contact_content.offsetTop - 750
+    console.log("--------",location_contact_content);
 
     window.addEventListener("scroll",function(){
         console.log(window.pageYOffset);

@@ -11,6 +11,9 @@
         color:$color-text;
         margin-top: .8rem;
     }
+    @include respond(mobile){
+        padding-top: 2.5rem;
+    }
 }
 .color-contact{
     color: $color-text;
@@ -24,6 +27,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-top: 1rem;
     }
 }
 
@@ -40,28 +44,32 @@
         margin: 0;
     }
     &__nth{
+        display: flex;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        justify-content: space-between;
+        // align-items: center; //
+        margin-bottom: 1.5rem;
+        width: 100%;
         @include respond(mobile){
             flex-direction: column;
-            margin-top: 1rem;
+            margin-bottom: 1rem;
         }
         &:last-child{
             @include respond(mobile){
                 margin: 0;
             }
         }   
-        display: flex;
-        justify-content: space-between;
-        // align-items: center; //
-        margin-bottom: 1.5rem;
-        width: 100%;
         &--title{
             color: $color-text;
             font-size: 1.4rem;
-            width: 100%;
+            // width: 100%;
             margin-top: 1rem; //
             @include respond(mobile){
                 margin: 0;
-                margin-bottom: 1rem;
+                margin-bottom: .5rem;
                 font-size: 1.2rem;
             }
         }
@@ -86,6 +94,7 @@
                 border: none;
                 @include respond(mobile){
                     width: 100%;
+                    height: 2.5rem;
                 }
             }
             &--input2{
@@ -96,6 +105,7 @@
                 border: none;
                 @include respond(mobile){
                     width: 100%;
+                    height: 2.5rem;
                 }
             }
             &--input3{
@@ -106,6 +116,7 @@
                 border: none;
                 @include respond(mobile){
                     width: 100%;
+                    height: 5.5rem;
                 }
             }
         }
@@ -136,18 +147,29 @@
         &--one{
             & p{
                 color: $color-text;
-                font-size: 1.2rem;
-                margin-bottom: 3.5rem;
+                font-size: 1.4rem;
+                margin-bottom: 2.5rem;
                 line-height: 1.75;
                 margin-top: 1rem;
+                @include respond(mobile){
+                    margin-bottom: 1rem;
+                    line-height: 1.5;
+                    font-size: 1.2rem;
+                }
             }
         }
         &--true{
             & p{
+                text-transform: uppercase;
                 color: $color-text;
-                font-size: 1.2rem;
+                font-size: 1.4rem;
                 line-height: 1.75;
-                margin-top: -2rem;
+                margin-bottom: 0;
+                @include respond(mobile){
+                    margin-bottom: .5rem;
+                    line-height: 1.5;
+                    font-size: 1.2rem;
+                }
             }
         }
     }

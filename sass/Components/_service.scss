@@ -37,7 +37,7 @@
     @include respond(mobile){
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         margin: 0;
         margin-top: 2.5rem;
     }
@@ -45,31 +45,15 @@
 
 .button{
     @include respond(mobile){
-        width: calc(100% / 2 - 15px);
+        width: calc((100% - 15px) / 2 );
         margin: 0;
     }
-    &:nth-child(1){
-        @include respond(mobile){
-            margin-right: 15px;
-        }
-    }
-    &:nth-child(3){
-        @include respond(mobile){
-            margin-right: 15px;
-        }
-    }
-    &:nth-child(5){
-        @include respond(mobile){
-            margin-right: 15px;
-        }
-    }
-    &:nth-child(7){
-        @include respond(mobile){
-            margin-right: 15px;
-        }
-    }
-    width: calc(100% / 4 - 20px);
+    width: calc((100% - 60px) / 4);
     height: 20rem;
+    @include respond(mobile){
+        height: 50%;
+    }
+    text-decoration: none;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -79,6 +63,9 @@
     background-color: $bg-button;
     cursor: pointer;
     margin-bottom: 20px !important;
+    @include respond(mobile){
+        margin-bottom: 15px !important;
+    }
     margin-right: 20px ; 
     &:nth-child(4){
         margin-right: 0 ;
@@ -90,12 +77,21 @@
         color: $primary;
         font-size: 1.8rem;
         font-weight: 700;
+        margin-top: 1rem;
         @include respond(mobile){
             font-size: 1.2rem;
+            margin-top: 1.5rem;
         }
     }
     &__img{
-        margin-top: 2rem;
+        width: 10rem;
+        @include respond(mobile){
+            width: 50%;
+            margin-top: 1rem;
+            margin-bottom: 1.3rem;
+            width: 48px;
+            height: 48px;
+        }
     }
 
 
@@ -104,6 +100,10 @@
         position: absolute;
         width: 10px;
         height: 2px;
+        @include respond(mobile){
+            width: 5px;
+            height: 1px;
+        }
         top: 0;
         left: 0;
         background: $color-boder-btn;
@@ -114,6 +114,10 @@
         position: absolute;
         width: 10px;
         height: 2px;
+        @include respond(mobile){
+            width: 5px;
+            height: 1px;
+        }
         bottom: 0;
         right: 0;
         background: $color-boder-btn;
@@ -125,6 +129,10 @@
         position: absolute;
         width: 10px;
         height: 2px;
+        @include respond(mobile){
+            width: 5px;
+            height: 1px;
+        }
         top: 0;
         right: 0;
         background: $color-boder-btn;
@@ -135,6 +143,10 @@
         position: absolute;
         width: 10px;
         height: 2px;
+        @include respond(mobile){
+            width: 5px;
+            height: 1px;
+        }
         bottom: 0;
         left: 0;
         background:$color-boder-btn;
@@ -148,6 +160,10 @@
         left: 0;
         width: 2px;
         height: 10px;
+        @include respond(mobile){
+            width: 1px;
+            height: 5px;
+        }
         background:$color-boder-btn;
         transition: all 0.5s ease;
     }
@@ -158,6 +174,10 @@
         right: 0;
         width: 2px;
         height: 10px;
+        @include respond(mobile){
+            width: 1px;
+            height: 5px;
+        }
         background: $color-boder-btn;
         transition: all 0.5s ease;
     }
@@ -169,6 +189,10 @@
         right: 0;
         width: 2px;
         height: 10px;
+        @include respond(mobile){
+            width: 1px;
+            height: 5px;
+        }
         background: $color-boder-btn;
         transition: all 0.5s ease;
     } 
@@ -179,6 +203,10 @@
         left: 0;
         width: 2px;
         height: 10px;
+        @include respond(mobile){
+            width: 1px;
+            height: 5px;
+        }
         background: $color-boder-btn;
         transition: all 0.5s ease;
     }

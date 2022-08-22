@@ -34,7 +34,7 @@
         height: 100%;   
         @include respond(mobile){
             flex-direction: column;
-            margin-top: 5rem;
+            margin-top: 4.5rem;
             justify-content: flex-start;
         }
         &--li{
@@ -42,7 +42,7 @@
             @include respond(mobile){
                 border: none;
                 padding: 0;
-                height: 10rem;
+                height: 6rem;
             }
             display: flex;
             align-items: center;

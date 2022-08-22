@@ -12,6 +12,7 @@ function handleScroll(){
 }
 
 function scrollToTop(){
+    handleScroll()
     rootElement.scrollTo({
         top:0,
         behavior: "smooth"

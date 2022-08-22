@@ -1,8 +1,8 @@
 .text-recruit__big{
-    color: $text-recruit;
+    color: white;
     margin-top: -.5rem;
     @include respond(mobile){
-        padding-top: 3rem;
+        margin-top: .5rem;
     }
 }
 .text-recruit__small{
@@ -21,11 +21,15 @@
 
     &__content{
         opacity: 0; //
+        @include respond(mobile){
+            margin-bottom: 2rem;
+        }
         &--text{
             @include respond(mobile){
                 margin-top: 0;
-                padding: 1.5rem;
                 font-size: 1.2rem;
+                padding-top: 2rem;
+                line-height: 1.5;
             }
             padding-top: 3rem;
             color: $text-recruit;
@@ -48,10 +52,19 @@
 .btn__recruit{
     margin: 2.3rem auto 0 auto;
     @include respond(mobile){
-        margin: 1rem auto 0 auto;
+        margin: 2rem auto 0 auto;
+        color: $text-about;
+        font-size: .7rem;
+        margin-top: 2.5rem;
     }
 }
 #anh{
     background-image: url('../img/redruit02.png');
+    background-position: center; background-repeat: no-repeat;  background-size: cover;
     height: 100%;
+    @include respond(mobile){
+        height: 100%;
+        background-image: url('../img/recui-moblie.png');
+        background-position: center; background-repeat: no-repeat;  background-size: cover;
+    }
 }
