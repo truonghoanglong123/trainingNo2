@@ -178,12 +178,16 @@ html, body {
       padding-bottom: 2.5rem; } }
 
 .section-recruit {
-  height: 31rem;
+  padding: 54px 0 52px 0;
+  background: rgba(125, 184, 39, 0.7);
+  position: relative;
+  overflow: hidden;
   text-align: center;
-  position: relative; }
+  width: 100%;
+  height: 100%; }
   @media (max-width: 640px) {
     .section-recruit {
-      height: 22rem; } }
+      padding: 25px 0 12px 0; } }
 
 .section-contact {
   background-color: #4f4e53;
@@ -236,7 +240,7 @@ html, body {
 .faceIn {
   animation: fadeInText 1s ease-in-out forwards; }
 
-#myGallery img {
+#myGallery figure {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -244,7 +248,7 @@ html, body {
   left: 0;
   z-index: 1; }
 
-#myGallery img.active {
+#myGallery figure.active {
   z-index: 2; }
 
 .bg {
@@ -267,7 +271,6 @@ html, body {
     background-size: cover; }
     @media (max-width: 640px) {
       .bg__img2 {
-        height: 100px;
         background-image: url("../img/slider02-mb.png");
         background-position: center;
         background-repeat: no-repeat;
@@ -729,8 +732,8 @@ html, body {
       display: block; } }
 
 .image {
-  height: 100%;
   width: 50%;
+  height: 100%;
   position: absolute;
   top: 0;
   right: 0;
@@ -738,13 +741,14 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  overflow: hidden; }
+  overflow-x: hidden; }
   @media (max-width: 640px) {
     .image {
       position: relative; } }
   .image__pc {
     width: 100%;
     height: inherit;
+    max-width: none;
     object-fit: cover; }
     @media (max-width: 640px) {
       .image__pc {
@@ -1010,7 +1014,8 @@ html, body {
     font-size: 2.4rem; }
     @media (max-width: 640px) {
       .content-partners__imgLeft--text {
-        font-size: 1.6rem; } }
+        font-size: 1.8rem;
+        line-height: 1.2; } }
     .content-partners__imgLeft--text span {
       font-size: 1.6rem; }
     .content-partners__imgLeft--text--mb {
@@ -1044,14 +1049,18 @@ html, body {
   color: #e6eed4; }
 
 .recruit-image {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative; }
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  z-index: -1;
+  background-image: url("../img/recui-chuan.jpg");
+  background-size: cover; }
+  @media (max-width: 640px) {
+    .recruit-image {
+      min-height: 100px; } }
   .recruit-image__content {
     opacity: 0; }
     @media (max-width: 640px) {
@@ -1086,20 +1095,6 @@ html, body {
       font-size: .7rem;
       margin-top: 2.5rem; } }
 
-#anh {
-  background-image: url("../img/redruit02.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%; }
-  @media (max-width: 640px) {
-    #anh {
-      height: 100%;
-      background-image: url("../img/recui-moblie.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover; } }
-
 .text-contact {
   opacity: 0;
   display: flex;
@@ -1107,7 +1102,7 @@ html, body {
   justify-content: center;
   flex-direction: column;
   color: #ffffff;
-  padding-top: 5rem; }
+  padding-top: 4.5rem; }
   .text-contact__small {
     font-size: 1.4rem;
     color: #ffffff;
@@ -1136,7 +1131,8 @@ html, body {
   align-items: center;
   flex-direction: column;
   padding-left: 1.2rem;
-  padding-right: 3rem; }
+  padding-right: 3rem;
+  padding-top: 0.5rem; }
   @media (max-width: 640px) {
     .contentLeft {
       width: 100%;

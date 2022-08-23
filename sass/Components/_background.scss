@@ -2,7 +2,7 @@
 //     position:relative;
 // }
 #myGallery{
-    & img{
+    & figure{
         position:absolute;
         width: 100%;
         height: 100%;
@@ -11,7 +11,7 @@
         z-index: 1;
     }
 }
-#myGallery img.active{
+#myGallery figure.active{
     z-index: 2;
 }
 .bg{
@@ -28,7 +28,6 @@
         background: url("../img/slider02.png");
         background-position: center; background-repeat: no-repeat;  background-size: cover;
         @include respond(mobile){
-            height: 100px;
             background-image: url("../img/slider02-mb.png");
             background-position: center; background-repeat: no-repeat; background-size: cover;
         }

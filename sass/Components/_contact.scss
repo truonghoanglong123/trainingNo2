@@ -5,7 +5,7 @@
     justify-content: center;
     flex-direction: column;
     color: $color-text;
-    padding-top: 5rem;
+    padding-top: 4.5rem;
     &__small{
         font-size: 1.4rem;
         color:$color-text;
@@ -38,6 +38,7 @@
     flex-direction: column;
     padding-left: 1.2rem;
     padding-right: 3rem;
+    padding-top: 0.5rem;
     @include respond(mobile){
         width: 100%;
         padding: 0;

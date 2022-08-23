@@ -24,10 +24,8 @@ document.addEventListener("DOMContentLoaded",function(){
 
     var contact_content = document.querySelector('.contact-content')
     var location_contact_content = contact_content.offsetTop - 750
-    console.log("--------",location_contact_content);
 
     window.addEventListener("scroll",function(){
-        console.log(window.pageYOffset);
         if(window.pageYOffset > location_service){
             service.classList.add('faceIn')
         }

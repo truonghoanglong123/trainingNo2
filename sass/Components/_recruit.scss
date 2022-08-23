@@ -10,15 +10,23 @@
 }
 
 .recruit-image{
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-
+    // background-attachment: fixed;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size:cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    z-index: -1;
+    background-image: url('../img/recui-chuan.jpg');
+    background-size: cover;
+    @include respond(mobile){
+        // background-repeat: no-repeat;
+        min-height: 100px;
+    }
     &__content{
         opacity: 0; //
         @include respond(mobile){
@@ -56,15 +64,5 @@
         color: $text-about;
         font-size: .7rem;
         margin-top: 2.5rem;
-    }
-}
-#anh{
-    background-image: url('../img/redruit02.png');
-    background-position: center; background-repeat: no-repeat;  background-size: cover;
-    height: 100%;
-    @include respond(mobile){
-        height: 100%;
-        background-image: url('../img/recui-moblie.png');
-        background-position: center; background-repeat: no-repeat;  background-size: cover;
     }
 }

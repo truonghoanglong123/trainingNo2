@@ -1,5 +1,5 @@
 //pagebacktop
-var rootElement = document.documentElement
+//var rootElement = document.documentElement
 var backtop = document.querySelector('.backtop')
 
 function handleScroll(){
@@ -13,7 +13,7 @@ function handleScroll(){
 
 function scrollToTop(){
     handleScroll()
-    rootElement.scrollTo({
+    window.scrollTo({
         top:0,
         behavior: "smooth"
     })
