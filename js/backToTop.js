@@ -28,8 +28,7 @@ document.addEventListener("scroll", handleScroll)
 var menu = document.querySelector('.section-menu')
 var section = document.querySelector('.section-service')
 function handleScrollMenu(){
-    // console.log(window.pageYOffset);
-    if(window.pageYOffset > 950){
+    if(window.pageYOffset > 800){
         menu.classList.add('fixmenu')
         section.classList.add('gat')
     }

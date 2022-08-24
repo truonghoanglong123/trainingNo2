@@ -9,7 +9,6 @@
     &__small{
         font-size: 1.4rem;
         color:$color-text;
-        margin-top: .8rem;
     }
     @include respond(mobile){
         padding-top: 2.5rem;
@@ -22,7 +21,7 @@
 .contact-content{
     opacity: 0; //
     display: flex;
-    margin-top: 3rem;
+    margin-top: 2.7rem;
     @include respond(mobile){
         flex-direction: column;
         align-items: center;
@@ -179,12 +178,14 @@
 
 .btn-footer{
     margin-right: 9.5rem;
+    margin-bottom: -.5rem;
     @include respond(mobile){
         margin: 0;
     }
 }
 .btn{
     margin: 0;
+    font-size: 1.4rem;
 }
 #input1{
     @include respond(mobile){

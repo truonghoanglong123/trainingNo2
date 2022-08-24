@@ -9,6 +9,6 @@ window.addEventListener("scroll",function(){
         parallax.style.backgroundPositionY = offset * -0.7 + "px"
     }
     else {
-        parallax.style.backgroundPositionY = offset * 0.1 + "px"
+        parallax.style.backgroundPositionY = offset * -0.0575 + "px"
     }
 })
