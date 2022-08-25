@@ -22,10 +22,10 @@
     content: "";
     z-index: -1;
     background-size: cover;
-    background-image: url('../img/recui-chuan.jpg');
+    background-image: url('../img/recruit.jpg');
     background-position: center center;
     @include respond(mobile){
-        background-image: url('../img/re-mb.png');
+        background-image: url('../img/recruit-mb.jpg');
     }
     &__content{
         opacity: 0; //

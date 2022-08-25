@@ -1,7 +1,7 @@
 // imghideshow
 function swapImages(){
     var $active = $('#myGallery .active');
-    var $next = ($('#myGallery .active').next().length > 0) ? $('#myGallery .active').next() : $('#myGallery figure:first');
+    var $next = ($('#myGallery .active').next().length > 0) ? $('#myGallery .active').next() : $('#myGallery div:first');
     $active.fadeOut(function(){
         $active.removeClass('active');
     });

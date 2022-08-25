@@ -2,7 +2,7 @@
 //     position:relative;
 // }
 #myGallery{
-    & figure{
+    & div{
         position:absolute;
         width: 100%;
         height: 100%;
@@ -11,24 +11,24 @@
         z-index: 1;
     }
 }
-#myGallery figure.active{
+#myGallery div.active{
     z-index: 2;
 }
 .bg{
     height: 100%;
     &__img1{
-        background: url("../img/slider01.png");
+        background: url("../img/slider01.jpg");
         background-position: center; background-repeat: no-repeat;  background-size: cover;
         @include respond(mobile){
-            background: url("../img/slider01-mb.png");
+            background: url("../img/slider01-mb.jpg");
             background-position: center; background-repeat: no-repeat; background-size: cover;
         }
     }
     &__img2{
-        background: url("../img/slider02.png");
+        background: url("../img/slider02.jpg");
         background-position: center; background-repeat: no-repeat;  background-size: cover;
         @include respond(mobile){
-            background-image: url("../img/slider02-mb.png");
+            background-image: url("../img/slider02-mb.jpg");
             background-position: center; background-repeat: no-repeat; background-size: cover;
         }
     }
