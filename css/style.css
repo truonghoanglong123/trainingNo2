@@ -103,7 +103,6 @@ body {
   position: relative; }
 
 html, body {
-  width: 100vw;
   overflow-x: hidden;
   font-family: 'Noto Sans JP', sans-serif; }
 
